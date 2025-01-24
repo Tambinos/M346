@@ -13,7 +13,7 @@
   <script>
     async function loadJoke() {
       try {
-        const response = await fetch("https://v2.jokeapi.dev/joke/Dark");
+        const response = await fetch("https://v2.jokeapi.dev/joke/Any");
         const data = await response.json();
         let jokeText = "Fehler beim Laden des Witzes.";
         if (data.type === "single") {
